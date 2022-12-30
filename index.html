@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Project F2</title>
+
+    <!-- Import font from google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div id="headRectangle">
+            Student Portal
+        </div>
+    </header>
+
+    <main>
+        <!-- Search Bar and button -->
+        <div>
+            <input type="text" id="searchBox" placeholder="Search">
+            <button type="submit" class="button" id="searchButton">Search</button>
+        </div>
+        <!-- container to add filter buttons as flexbox, evenly spread -->
+        <div class="container">
+            <button type="submit" class="button" id="sortAZ">Sort A->Z</button>
+            <button type="submit" class="button" id="sortZA">Sort Z->A</button>
+            <button type="submit" class="button" id="sortMarks">Sort By Marks</button>
+            <button type="submit" class="button" id="sortPassing">Sort By Passing</button>
+            <button type="submit" class="button" id="sortClass">Sort By Class</button>
+            <button type="submit" class="button" id="sortGender">Sort By Gender</button>
+        </div>
+        <!-- creating a table and intializing its header/thead -->
+        <div>
+            <table style="width:94.7%; margin:39px;" id="dataTable">
+                <tr>
+                    <th style="width:5%">ID</th>
+                    <th style="width:35%">Name</th>
+                    <th style="width:10%">Gender</th>
+                    <th style="width:10%">Class</th>
+                    <th style="width:10%">Marks</th>
+                    <th style="width:10%">Passing</th>
+                    <th style="width:20%">Email</th>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+
+    <!-- Linking js file to our HTML page & Note: it is imp to write ' type="module" ', whenever we import json file and wants to display its content on local server-->
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
